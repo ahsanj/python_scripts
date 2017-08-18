@@ -12,7 +12,7 @@ class AuthExceptionBadFormat(Exception):
     '''HTTP response from auth contains unexpected format'''
     pass
 
-def get_racker_token(username, password, server='https://identity-internal.api.rackspacecloud.com' ):
+def get_racker_token(username, password, server='https://xxxxxxx' ):
     '''Returns a Racker token for the given username and password'''
     path = '/v2.0/tokens'
     payload = {
