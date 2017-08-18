@@ -21,7 +21,7 @@ def feedback_received():
     for ticket in response.get('tickets', [None]):
         #if ticket['assignee']['value'] != "" and ticket['status'] != 'Solved':
         if ticket['status'] == "Feedback Received":
-            url= urljoin('https://encore.rackspace.com/ticketing/ticket/' ,ticket['ticket_id'])
+            url= urljoin('https://xxxxxxx/ticketing/ticket/' ,ticket['ticket_id'])
             tickets.append(url)
     text= '\n'.join(tickets)
     return str(text)
